@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url(./styles/reset.scss);
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+a{
+  text-decoration: none;
+}
+
+.products--grid{
+  app-img{
+    text-align: center;
+    img{
+      border-radius: 10px;
+    }
+  }
+}
+
+.btn-primary{
+  background: transparent;
+  color: #0a293c;
+  border: 1px solid #0a293c;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  &:hover{
+    background: #a5dcff;
+  }
+
+}

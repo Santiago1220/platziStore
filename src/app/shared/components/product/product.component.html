@@ -1,0 +1,12 @@
+<a [routerLink]="['/product', product.id]">
+  <div class="image-cont">
+    <app-img [img]="product.images[0]"></app-img>
+  </div>
+</a>
+<h2 class="price">{{product.price | currency:'USD'}}</h2>
+<p class="iva">IVA: {{product.taxes | currency:'USD'}}</p>
+<p class="title">{{product.title}}</p>
+
+<!-- <button class="btn-primary" (click)="onShowDetail()">Detail</button> -->
+<a routerLink="." [queryParams]="{product: product.id}" class="btn-primary">Ver detalle</a>
+<button class="btn-primary" (click)="onAddToCart()">Add to cart</button>
